@@ -1,4 +1,4 @@
-let deferredPrompt;
+// let deferredPrompt;
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register('/sw.js')
@@ -6,10 +6,10 @@ if ("serviceWorker" in navigator) {
         console.log("Service worker зареєстровано!");
     })
 }
-window.addEventListener("beforeinstallprompt", function(event)
-{
-    console.log("beforeinstallprompt скасовано");
-    event.preventDefault();
-    deferredPrompt = event;
-    return false;
-});
+// window.addEventListener("beforeinstallprompt", function(event)
+// {
+//     console.log("beforeinstallprompt скасовано");
+//     event.preventDefault();
+//     deferredPrompt = event;
+//     return false;
+// });
