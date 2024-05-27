@@ -17,7 +17,7 @@ function openCreatePostModal() {
     deferredPrompt = null;
   }
 }
-
+  
 function closeCreatePostModal() {
   createPostArea.style.display = 'none';
 }
